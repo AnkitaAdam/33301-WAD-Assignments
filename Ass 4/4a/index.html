@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Mobile Example</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .header, .footer {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .content {
+            padding: 15px;
+            text-align: center;
+        }
+        .btn-custom {
+            background: #007bff !important;
+            color: white !important;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .btn-custom:hover {
+            background: #0056b3 !important;
+        }
+        .form-section {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        .navbar-custom {
+            display: flex;
+            justify-content: space-around;
+            background: #007bff;
+            padding: 10px 0;
+        }
+        .navbar-custom a {
+            background: #0056b3;
+            color: white !important;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .navbar-custom a:hover {
+            background: #003d80;
+        }
+    </style>
+</head>
+<body>
+    <!-- Home Page -->
+    <div data-role="page" id="home">
+        <div data-role="header" class="header">
+            <h1>Home</h1>
+        </div>
+        <div class="navbar-custom">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div data-role="content" class="content">
+            <h2>Welcome!</h2>
+            <p>Explore various sections to learn more about our offerings.</p>
+        </div>
+        <div data-role="footer" class="footer">
+            <h4>&copy; 2024 jQuery Mobile Site</h4>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div data-role="page" id="about">
+        <div data-role="header" class="header">
+            <h1>About Us</h1>
+        </div>
+        <div data-role="content" class="content">
+            <p>We specialize in building responsive and efficient mobile websites using jQuery Mobile.</p>
+            <p>Our mission is to create seamless user experiences across all devices.</p>
+        </div>
+        <div data-role="footer" class="footer">
+            <h4>&copy; 2024 jQuery Mobile Site</h4>
+        </div>
+    </div>
+
+    <!-- Services Page -->
+    <div data-role="page" id="services">
+        <div data-role="header" class="header">
+            <h1>Our Services</h1>
+        </div>
+        <div data-role="content" class="content">
+            <h3>We Offer:</h3>
+            <ul>
+                <li>Mobile-Friendly Web Design</li>
+                <li>Custom Web Applications</li>
+                <li>UI/UX Consulting</li>
+                <li>SEO & Performance Optimization</li>
+                <li>E-commerce Solutions</li>
+            </ul>
+        </div>
+        <div data-role="footer" class="footer">
+            <h4>&copy; 2024 jQuery Mobile Site</h4>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div data-role="page" id="contact">
+        <div data-role="header" class="header">
+            <h1>Contact Us</h1>
+        </div>
+        <div data-role="content" class="content">
+            <section class="form-section">
+                <h3>Get in Touch</h3>
+                <p>We'd love to hear from you!</p>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn-custom">Submit</button>
+                </form>
+            </section>
+        </div>
+        <div data-role="footer" class="footer">
+            <h4>&copy; 2024 jQuery Mobile Site</h4>
+        </div>
+    </div>
+</body>
+</html>

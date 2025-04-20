@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+
+        <form id="studentForm">
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <br><input type="text" id="rollNo" placeholder="Enter Roll No" required>
+            <br><button type="submit">Register</button>
+        </form>
+
+        <h2>Registered Students</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll No</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="studentList"></tbody>
+        </table>
+    </div>
+
+    <!-- Edit Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Student</h2>
+            <input type="text" id="editName" placeholder="Enter New Name">
+            <input type="hidden" id="editRollNo">
+            <button onclick="updateStudent()">Update</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
